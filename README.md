@@ -1,9 +1,10 @@
 # ***FavCat-Restored is Finished***
-I'm done updating FavCat. I just don't care enough to update it anymore (due to priorities shifting to Streaming). I'm fine with someone forking this repo to do it, but don't expect me to keep updating it.
+I'm done updating FavCat. I just don't care enough to update it anymore (due to priorities shifting to Streaming). I'm fine with someone forking this repo to do it, but don't expect me to keep updating it. Go look around for some others who are working on keeping Avatar Favorites in FavCat.
 
-If anyone wanted to join my streaming-specific discord, [You can do so here](https://discord.gg/NN97vNjXNA)! (just know there's no FavCat related stuff in there anymore).
+And Hey, i took up Streaming recently, and  if anyone wanted to join my discord, [you can do so here](https://discord.gg/NN97vNjXNA)!
+- **Don't just join the discord just to ask me to *"plz update favcat"*, I won't be updating it at all and won't be in the future.**
 
-But either way, I appreciate everyone who's downloaded and used the mod over the months i've been updating it, but sadly you'll need to find somewhere else to get your FavCat needs.
+Either way though, I appreciate everyone who's downloaded and used the mod over the months i've been updating it, but sadly you'll need to find somewhere else to get your FavCat needs.
 
 😎
 
