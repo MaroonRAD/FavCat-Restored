@@ -1,31 +1,25 @@
-# ***FavCat-Restored is Finished***
-I'm done updating FavCat. I just don't care enough to update it anymore (due to priorities shifting to Streaming). I'm fine with someone forking this repo to do it, but don't expect me to keep updating it. Go look around for some others who are working on keeping Avatar Favorites in FavCat.
+# ***FavCat-Restored is back!***
+FelkonEx has discontinued the original fork and does streaming now, if you want to join his Discord and support him, [you can do so here](https://discord.gg/NN97vNjXNA)!
+- **Don't join the Discord to ask about FavCat updates/bugs though, he's done with it and it's now up to forks like this one to continue keeping it functional.**
 
-And Hey, i took up Streaming recently, and  if anyone wanted to join my discord, [you can do so here](https://discord.gg/NN97vNjXNA)!
-- **Don't just join the discord just to ask me to *"plz update favcat"*, I won't be updating it at all and won't be in the future.**
+ Feel free to join the [VRChat Open Modding Group](https://discord.gg/ZZaSA6W9E2) for any bug reports, or simply to chat!
 
-Either way though, I appreciate everyone who's downloaded and used the mod over the months i've been updating it, but sadly you'll need to find somewhere else to get your FavCat needs.
+This repo's fork will contain changes to revert the decision of removing Avatar favorites within FavCat, forked from the [original VRCMods repo](https://github.com/knah/VRCMods).
 
-😎
+**If you're looking for the download, [click here](https://github.com/MaroonRAD/FavCat-Restored/releases) to get the most recent version**. Or click on the "Releases" over there 👉
 
+**I highly recommend supporting the VRCMG's developers**, as they make and maintain free, open-source mods for everyone to use.
+Even if you disagree with a restriction placed in their mods, anyone is free to fork it and remove it.
 
-# Original README
-![gamer](https://github.com/FelkonEx/FavCat-Restored/blob/master/Untitled-2.jpg)
-
-This repo's fork will contain changes to revert the decision of having VRC+ to use any of the favoriting within FavCat, forked from the [original VRCMods repo](https://github.com/knah/VRCMods).
-
-**If you're looking for the download, [click here](https://github.com/FelkonEx/FavCat-Restored/releases) to get the most recent version**. Or click on the "Releases" over there 👉
-
-**I highly recommend supporting Knah and the original VRCMods developers**, as they're the ones that set the foundation for FavCat.
-
-I haven't changed any of the functionality outside of breaking-off the FavCat's VRChat+ things from the base repo's commit, and i won't be unless:
-* VRChat breaks the current version, and i need to fix it.
+Functionality is unchanged, except for the restoration of Avatar favorites and disabling of the integrity check system.
+Any changes made will generally fit into the following three categories:
+* VRChat breaks the current version, and it needs fixing.
 * There's some clean code changes in the original repo that clean up the existing FavCat.
 * Merging in UIExpansionKit changes (for build purposes).
 
-If you don't trust the releases i put up for whatever reason, `I suggest cloning this repo and building it yourself`.
+If you don't trust the releases I put up for whatever reason, `I suggest cloning this repo and building it yourself`.
 It's always safer if you build it yourself or understand how the code works, since you know exactly what's going into the `.dll` files that are generated.
-Hell, even decompile the .dll yourself and have a poke around, doesn't hurt to look.
+Hell, even [decompile the .dll yourself](https://github.com/dnSpyEx/dnSpy/releases) and have a poke around, doesn't hurt to look.
 
 ## See [original VRCMods repo](https://github.com/knah/VRCMods/blob/master/README.md) for original README file
 This one has just been yoinked and reverted.
@@ -124,7 +118,7 @@ Then, you will have to put mod .dll files in the `Mods` folder of your game dire
 
 ## Building
 To build these, drop required libraries (found in `<vrchat instanll dir>/MelonLoader/Managed` after melonloader installation, list found in `Directory.Build.props`) into Libs folder, then use your IDE of choice to build.
- * Libs folder is intended for newest libraries (MelonLoader 0.4.3)
+ * Libs folder is intended for newest libraries (MelonLoader 0.5.4)
 
 ## License
 With the following exceptions, all mods here are provided under the terms of [GNU GPLv3 license](LICENSE)
