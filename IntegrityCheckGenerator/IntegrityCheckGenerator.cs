@@ -177,24 +177,29 @@ namespace IntegrityCheckGenerator
             generatedCode.AppendLine("}");
             
             generatedCode.AppendLine("private static readonly string[] ourAnnoyingMessages = {");
-            generatedCode.AppendLine("    \"===================================================================\",");
-            generatedCode.AppendLine("    \"I'm afraid I can't let you do that, Dave\",");
-            generatedCode.AppendLine("    \"\",");
-            generatedCode.AppendLine("    \"You're using MelonLoader with important security features missing.\",");
-            generatedCode.AppendLine("    \"In addition to such versions being a requirement for malicious mods,\",");
-            generatedCode.AppendLine("    \"this exposes you to additional risks from certain malicious actors,\",");
-            generatedCode.AppendLine("    \"including ACCOUNT THEFT, ACCOUNT BANS, and other unwanted consequences\",");
-            generatedCode.AppendLine("    \"This is not limited to VRChat - other accounts (i.e. Discord) can be affected\",");
-            generatedCode.AppendLine("    \"This is not what you want, so download the official installer from\",");
-            generatedCode.AppendLine("    \"https://github.com/LavaGang/MelonLoader/releases\",");
-            generatedCode.AppendLine("    \"then close this console, and reinstall MelonLoader using it.\",");
-            generatedCode.AppendLine("    \"\",");
-            generatedCode.AppendLine("    \"You can read more about why this message is a thing here:\",");
-            generatedCode.AppendLine("    \"https://github.com/knah/VRCMods/blob/master/Malicious-Mods.md\",");
-            generatedCode.AppendLine("    \"\",");
-            generatedCode.AppendLine("    \"Rejecting malicious mods is the only way forward.\",");
-            generatedCode.AppendLine("    \"Pressing enter will close VRChat.\",");
-            generatedCode.AppendLine("    \"===================================================================\",");
+			
+			// Feel free to uncomment all this stuff again, I just don't see the point in keeping it in
+			// (especially considering it links the mal document and is overall REALLY pushy)
+			
+            //generatedCode.AppendLine("    \"===================================================================\",");
+            generatedCode.AppendLine("    \"Dave check trigger message!\",");
+            //generatedCode.AppendLine("    \"I'm afraid I can't let you do that, Dave\",");
+            //generatedCode.AppendLine("    \"\",");
+            //generatedCode.AppendLine("    \"You're using MelonLoader with important security features missing.\",");
+            //generatedCode.AppendLine("    \"In addition to such versions being a requirement for malicious mods,\",");
+            //generatedCode.AppendLine("    \"this exposes you to additional risks from certain malicious actors,\",");
+            //generatedCode.AppendLine("    \"including ACCOUNT THEFT, ACCOUNT BANS, and other unwanted consequences\",");
+            //generatedCode.AppendLine("    \"This is not limited to VRChat - other accounts (i.e. Discord) can be affected\",");
+            //generatedCode.AppendLine("    \"This is not what you want, so download the official installer from\",");
+            //generatedCode.AppendLine("    \"https://github.com/LavaGang/MelonLoader/releases\",");
+            //generatedCode.AppendLine("    \"then close this console, and reinstall MelonLoader using it.\",");
+            //generatedCode.AppendLine("    \"\",");
+            //generatedCode.AppendLine("    \"You can read more about why this message is a thing here:\",");
+            //generatedCode.AppendLine("    \"https://github.com/knah/VRCMods/blob/master/Malicious-Mods.md\",");
+            //generatedCode.AppendLine("    \"\",");
+            //generatedCode.AppendLine("    \"Rejecting malicious mods is the only way forward.\",");
+            //generatedCode.AppendLine("    \"Pressing enter will close VRChat.\",");
+            //generatedCode.AppendLine("    \"===================================================================\",");
             generatedCode.AppendLine("};");
 
             generatedCode.AppendLine("}");
@@ -205,15 +210,15 @@ namespace IntegrityCheckGenerator
 
         private static void PrintCheckFailedCode(StringBuilder builder, int indent)
         {
-            var prefix = "".PadLeft(indent * 4, ' ');
-            builder.AppendLine(prefix + "try {");
-            builder.AppendLine(prefix + "    MustStayFalse = true;");
-            builder.AppendLine(prefix + "    foreach (var message in ourAnnoyingMessages) MelonLogger.Error(message);");
-            builder.AppendLine(prefix + "    Console.In.ReadLine();");
-            builder.AppendLine(prefix + "    Environment.Exit(1);");
-            builder.AppendLine(prefix + "} finally {");
-            builder.AppendLine(prefix + "    try { Marshal.GetDelegateForFunctionPointer<Action>(Marshal.AllocHGlobal(16))(); } finally { while(true); }");
-            builder.AppendLine(prefix + "}");
+            //var prefix = "".PadLeft(indent * 4, ' ');
+            //builder.AppendLine(prefix + "try {");
+            //builder.AppendLine(prefix + "    MustStayFalse = true;");
+            //builder.AppendLine(prefix + "    foreach (var message in ourAnnoyingMessages) MelonLogger.Error(message);");
+            //builder.AppendLine(prefix + "    Console.In.ReadLine();");
+            //builder.AppendLine(prefix + "    Environment.Exit(1);");
+            //builder.AppendLine(prefix + "} finally {");
+            //builder.AppendLine(prefix + "    try { Marshal.GetDelegateForFunctionPointer<Action>(Marshal.AllocHGlobal(16))(); } finally { while(true); }");
+            //builder.AppendLine(prefix + "}");
         }
     }
 }
